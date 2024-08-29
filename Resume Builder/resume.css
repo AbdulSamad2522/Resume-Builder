@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #f2e2c4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff4e6;
+    border: 1px solid #e0c097;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn{
+    background-color: #a67c52;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn:hover{
+    background-color: #8a5a32;
+}
+.btn:focus{
+    transform: scale(0.97);
+}
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #a67c52;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+h1 {
+    color: #a67c52;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #5b3b24;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #a67c52;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #5b3b24;
+}
+
+/* Links */
+a {
+    color: #8a5a32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 15px;
+    }
+
+    .profile-info {
+        margin-bottom: 20px;
+    }
+    .btn{
+        background-color: #a67c52;
+        color: white;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        margin-bottom: 10px;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-btn{
+        display: flex;
+        column-gap: 2px;
+    }
+}

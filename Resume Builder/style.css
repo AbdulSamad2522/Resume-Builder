@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f2e2c4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}  
+
+/* Container */
+.container {
+    min-width: 80%;
+    background-color: #fff4e6;
+    border: 1px solid #e0c097;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+/* Title */
+.top {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #a67c52;
+    font-size: 24px;
+}
+
+.sub-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #a67c52;
+}
+
+.sub-title a {
+    color: #a67c52;
+    text-decoration: none;
+}
+
+/* Form Styles */
+.resume-form label {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #5b3b24;
+}
+
+.resume-form input[type="text"],
+.resume-form input[type="email"],
+.resume-form input[type="tel"],
+.resume-form input[type="url"],
+.resume-form input[type="file"],
+.resume-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #c4a484;
+    border-radius: 5px;
+    background-color: #f9f0e4;
+    color: #5b3b24;
+}
+.in-field, .in-field2{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid #000; */
+}
+
+.resume-form textarea {
+    resize: vertical;
+}
+
+.resume-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.up {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.left {
+    width: 50%;
+    padding-right: 10px;
+}
+
+
+/* Button */
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #a67c52;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #8a5a32;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .body {
+        line-height: 1.2;
+    }
+
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-size: 0.7rem;
+    }
+
+    .up {
+        display: block;
+
+    }
+
+    .right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .left {
+        width: 100%;
+        padding-right: 0;
+    }
+}
