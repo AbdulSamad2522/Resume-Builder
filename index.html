@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <!-- <script src="printThis.js"></script> -->
+    <script src="jquery.qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1 class="title">Resume Builder</h1>
+            <small class="sub-title">Create your resume in minutes by <a href="https://abdulsamad2522.github.io/abdulsamad-profile/">AbdulSamad</a></small>
+        </div>
+        <form class="resume-form">
+            <div class="up">
+                <div class="left">
+                    <!-- Job Title -->
+                    <label for="job-title">Wanted Job Title</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="E.g., Web Developer" required>
+
+                    <!-- Profile Image -->
+                    <label for="upload-image">Upload Profile Image</label>
+                    <input type="file" id="upload-image" name="profile-image" accept="image/*">
+
+                    <!-- Personal Details -->
+                    <div class="personal-details">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="first-name" required>
+
+                        <!-- <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required> -->
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <!-- Skills -->
+                    <label for="skills" style="display: inline;">Skills</label>
+                    <button class="btn" id="add-skills" style="float: right;margin-bottom: 10px;padding: 5px;font-size: 0.7rem;">Add</button>    
+                    <div class="in-field">
+                        <input type="text" id="skills" name="skills" style="width: 50%"  placeholder="List your skills..."></input>
+                        <input type="text" id="skills-2" name="skills" style="width: 50%;margin-left: 2px;"  placeholder="List your skills..."></input>
+                    </div>
+                    <div class="in-field2" >
+                        <input type="text" id="skills-3" name="skills" style="width: 50%;display: inline;"  placeholder="List your skills..."></input>
+                        <input type="text" id="skills-4" name="skills" style="width: 50%;display: inline;margin-left: 2px;"  placeholder="List your skills..."></input>    
+                    </div>
+                </div>
+
+                <div class="right">
+                    <!-- Professional Summary -->
+                    <div class="summary">
+                        <label for="summary">Professional Summary</label>
+                        <textarea id="summary" name="summary" style="margin-bottom: 0;"  placeholder="Write a short professional summary..."></textarea>
+                        <button class="btn" id="summary-text" style="float: right;padding: 5px;font-size: 0.7rem;">Create with AI</button>        
+                    </div>
+                    <!-- Employment History -->
+                    <div class="from-g" id="form-group">
+                        <label for="employment-history">Employment History / Projects</label>
+                        <input type="text" id="employment-history" name="employment-history" style="margin-bottom: 0;"  placeholder="Describe your past job experiences..."></input>
+                        <input type="text" id="employment-history2" name="employment-history" style="margin-bottom: 0;margin-top: 10px;"  placeholder="Describe your past job experiences..."></input>
+                        <button class="btn" id="add-project" style="float: right;margin-bottom: 10px;padding: 5px;font-size: 0.7rem;">Add</button>    
+                    </div>
+                    <!-- Education -->
+                    <div class="second-g" id="second-group">
+                        <label for="education">Education</label>
+                        <input type="text" id="education" name="education" style="margin-bottom: 0;"  placeholder="E.g., Bachelor of Science in Computer Science - ABC University (2016 - 2020)"></input>
+                        <input type="text" id="education2" name="education" style="margin-bottom: 0;margin-top: 10px;"  placeholder="E.g., Intermediate in Computer Science - ABC College (2014 - 2015)"></input>
+                        <button class="btn" id="add-education" style="float: right;margin-bottom: 10px;padding: 5px;font-size: 0.7rem;">Add</button>
+    
+                    </div>
+                    <!-- Courses -->
+                    <div class="third-g">
+                        <label for="courses">Licenses & Certifications</label>
+                        <input type="text" id="courses" style="margin-bottom: 0;" name="courses" rows="3" placeholder="List any courses you've completed..."></input>
+                        <input type="text" id="courses2" style="margin-bottom: 0;margin-top: 10px;" name="courses"  placeholder="List any courses you've completed..."></input>
+                        <button class="btn" id="add-course" style="float: right;margin-bottom: 10px;padding: 5px;font-size: 0.7rem;">Add</button>    
+                    </div>
+                    <!-- Social Media Links -->
+                    <div class="forth-g">
+                        <label for="social-media">Website & Social Media Links</label>
+                        <input type="url" id="social-media" name="social-media" style="margin-bottom: 0;" placeholder="E.g., LinkedIn Profile">
+                        <button class="btn" id="add-link" style="float: right;margin-bottom: 10px;padding: 5px;font-size: 0.7rem;">Add</button>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="down">
+                <!-- Submit Button -->
+                <button type="submit" class="btn" id="submit">Genrate Resume</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="java.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script>
+
+</body>
+</html>
